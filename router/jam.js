@@ -7,6 +7,6 @@ routerJam.route("/Jam").get(controllerJam.getJamBySeri).post(controllerKue.inser
 
 routerKue.route("/Jam/:seri").put(controllerJam.update).get(controllerJam.getJamBySeri).delete(controllerJam.delete);
 
-routerKue.route("/Jam/Nama/:seri").get(controllerJam.getJamBySeri).put(controllerJam.update);
+routerKue.route("/Jam/Nama/:seri").get(controllerJam.getJamBySeri).put(controllerJam.insert);
 
 module.exports = routerKue;
